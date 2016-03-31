@@ -5,6 +5,11 @@
 # is restricted to this project.
 use Mix.Config
 
+config :phoenix_checkin_washlet, PhoenixCheckinWashlet.Repo,
+  adapter: Sqlite.Ecto,
+  database: "washlet.repo"
+
+
 # Configures the endpoint
 config :phoenix_checkin_washlet, PhoenixCheckinWashlet.Endpoint,
   url: [host: "localhost"],

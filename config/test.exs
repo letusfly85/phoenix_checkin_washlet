@@ -11,9 +11,5 @@ config :logger, level: :warn
 
 # Configure your database
 config :phoenix_checkin_washlet, PhoenixCheckinWashlet.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "phoenix_checkin_washlet_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  adapter: Sqlite.Ecto,
+  database: "washlet.test.repo",

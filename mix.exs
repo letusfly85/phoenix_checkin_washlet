@@ -19,7 +19,7 @@ defmodule PhoenixCheckinWashlet.Mixfile do
   def application do
     [mod: {PhoenixCheckinWashlet, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :sqlite_ecto]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,7 +31,7 @@ defmodule PhoenixCheckinWashlet.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [{:phoenix, "~> 1.1.4"},
-     {:postgrex, ">= 0.0.0"},
+     {:sqlite_ecto, "~> 1.0.2"},
      {:phoenix_ecto, "~> 2.0"},
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
