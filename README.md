@@ -18,3 +18,9 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## MEMO
+
+```bash
+curl -H "Accept: application/json" -H "Content-type: application/json" -XPOST http://localhost:4000/washlets/checkin -d '{"key":"value"}'
+```
