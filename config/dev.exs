@@ -34,9 +34,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :phoenix_checkin_washlet, PhoenixCheckinWashlet.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "phoenix_checkin_washlet_dev",
-  hostname: "localhost",
-  pool_size: 10
+  adapter: Sqlite.Ecto,
+  database: "washlet.dev.repo"

@@ -7,7 +7,7 @@ use Mix.Config
 
 config :phoenix_checkin_washlet, PhoenixCheckinWashlet.Repo,
   adapter: Sqlite.Ecto,
-  database: "washlet.repo"
+  database: "washlet.prod.repo"
 
 
 # Configures the endpoint
