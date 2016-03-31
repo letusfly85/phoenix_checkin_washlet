@@ -23,7 +23,9 @@ defmodule PhoenixCheckinWashlet.Router do
   scope "/", PhoenixCheckinWashlet do
     pipe_through :api # Use the default browser stack
 
-    post "/washlets/checkin", WashletController, :checkin
+    post "/washlets/checkin",  WashletController, :checkin
+    post "/washlets/list",     WashletController, :list
+    post "/washlets/register", WashletController, :register
   end
   # Other scopes may use custom stacks.
   # scope "/api", PhoenixCheckinWashlet do
