@@ -23,4 +23,6 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
 ```bash
 curl -H "Accept: application/json" -H "Content-type: application/json" -XPOST http://localhost:4000/washlets/checkin -d '{"key":"value"}'
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -XPOST http://localhost:4000/washlets/register -d '{"name":"shinjuku", "latitude":"35.7015898","longitude":"139.6741875","status":"unused"}'
 ```
